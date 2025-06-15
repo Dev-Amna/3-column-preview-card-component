@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+img {
+    width: 64px;
+    margin-bottom: 35px;
+}
+
+.col {
+    padding: 48px;
+    height: auto;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+    margin-bottom: 80px;
+}
+
+button {
+    padding: 12px 30px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%) !important;
+}
+
+.one {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.three {
+    background-color: hsl(179, 100%, 13%);
+}
+
+#btn1 {
+    color: hsl(31, 77%, 52%);
+}
+
+#btn2 {
+    color: hsl(184, 100%, 22%);
+}
+
+#btn3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution { 
+    font-size: 1rem; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.attribution a { 
+    text-decoration: none   ;
+  background: linear-gradient(to right,hsl(31, 77%, 52%) ,  hsl(184, 100%, 22%),hsl(179, 100%, 13%)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+    .box {
+        grid-template-columns: 1fr;
+        max-width: 327px;
+    }
+    
+    p {
+        margin-bottom: 25px;
+    }
+    
+    .col {
+        padding: 48px;
+    }
+}
